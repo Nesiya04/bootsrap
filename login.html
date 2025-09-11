@@ -1,0 +1,266 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:url(https://editorial.rottentomatoes.com/wp-content/uploads/2025/05/1qMepRaA.png) no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 400px;
+      min-height: 440px;
+      background: peachpuff;
+      border: 2px solid black;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: height 0.2s ease;
+    }
+
+    .wrapper.active {
+      height: 560px; /* taller for register */
+    }
+
+    .wrapper .form-box {
+      width: 100%;
+      padding: 40px;
+    }
+
+    .wrapper .form-box.login {
+      transition: transform .18s ease;
+      transform: translateX(0);
+    }
+
+    .wrapper.active .form-box.login {
+      transition: none;
+      transform: translateX(-400px);
+    }
+
+    .wrapper .form-box.register {
+      position: absolute;
+      transition: none;
+      transform: translateX(400px);
+    }
+
+    .wrapper.active .form-box.register {
+      transition: transform .18s ease;
+      transform: translateX(0);
+    }
+
+    .form-box h2 {
+      font-size: 2rem;
+      color: black;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Input box */
+    .input-box {
+  position: relative;
+  margin: 20px 0;
+    }
+
+    .input-box label {
+     
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  width: 100%;          /* makes it align properly */
+
+
+    }
+
+    .input-box .icon {
+  position: absolute;
+  top: 65%;               /* center vertically */
+  left: 24px;             /* inside the box */
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: black;
+}
+
+   .input-box input {
+  width: 90%;           /* smaller width so it doesn’t touch borders */
+  height: 45px;
+  padding: 0 10px 0 35px; 
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  margin: 5px auto;     /* centers input */
+  display: block;
+}
+
+    .remember-forgot {
+      font-size: 0.95rem;
+      color: black;
+      font-weight: 600;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .remember-forgot label input {
+      accent-color: black;
+      margin-right: 5px;
+    }
+
+    .remember-forgot a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .remember-forgot a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 100%;
+      height: 45px;
+      background: black;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .login-register {
+      font-size: 0.9rem;
+      color: black;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .login-register p a {
+      color: rgb(149, 9, 243);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .login-register p a:hover {
+      text-decoration: underline;
+    }
+
+    .wrapper .icon-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background: black;
+      font-size: 2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 20px;
+      cursor: pointer;
+      z-index: 1;
+      text-decoration: none;
+    }
+
+
+
+  </style>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="wrapper">
+    <a href="file:///C:/OneDrive/Desktop/JAVA%20SCRIPT/project.html/index.html" class="icon-close"><i class="fa-solid fa-xmark"></i></a>
+
+    <!-- Login -->
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <label>Email</label>
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" required>
+        </div>
+        <div class="input-box">
+          <label>Password</label>
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="register-Link">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Register -->
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <label class="label">Username</label>
+          <span class="icon"><i class="fa-solid fa-circle-user"></i></span>
+          <input type="text" required>
+        </div>
+        <div class="input-box">
+          <label class="label">Email</label>
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" required>
+        </div>
+        <div class="input-box">
+          <label class="label">Password</label>
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already have an account? <a href="#" class="login-Link">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const wrapper = document.querySelector('.wrapper');
+    const loginLink = document.querySelector('.login-Link');
+    const registerLink = document.querySelector('.register-Link');
+    const iconClose = document.querySelector('.icon-close');
+
+    registerLink.addEventListener('click', () => {
+      wrapper.classList.add('active');
+    });
+
+    loginLink.addEventListener('click', () => {
+      wrapper.classList.remove('active');
+    });
+
+    iconClose.addEventListener('click', () => {
+      wrapper.classList.remove('active');
+    });
+  </script>
+</body>
+</html>

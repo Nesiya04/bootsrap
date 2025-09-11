@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.img{
+    position: absolute;
+    justify-content: center;
+    
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  background: lightcyan;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  height: 420px;
+  box-shadow:3px 3px 10px 5px rgb(238, 5, 5);
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: orangered;
+}
+
+.form input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  
+  
+}
+
+.form button {
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 15px;
+}
+
+.form button:hover {
+  background-color: red;
+}
+
+.form p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700px;
+}
+.form p a{
+
+    text-decoration: none;
+    color: orangered;
+}
+.form p a:hover{
+
+    text-decoration: underline;
+    color: red;
+}
+.hidden {
+  display:none;
+}
+.error {
+      color: red;
+      font-size: 12px;
+    }
+
+    .remember-forgot a{
+      text-decoration: none;
+      margin-left: 30px;
+      font-style: normal;
+      
+    }
+    .remember-forgot a:hover{
+      text-decoration: underline;
+      color: red;
+    }
+
+    .container .close{
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 37px;
+      height: 37px;
+      background-color: orangered;
+      font-size: 2rem;
+      color: white;
+      justify-content: center;
+      padding-left:5px ;
+      border-radius: 7px;
+      border: red;
+      
+      }
+.container .close:hover{
+
+background-color: red;
+color: white;
+}
+
+
+   

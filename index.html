@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-egde">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Flix</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!--box icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- coming Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <!-- Navbar-->
+  <header class="shadow"> 
+  <nav class="navbar navbar-expand-lg fixed-top" id="shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#"><i class="fa-solid fa-film" id="logo"></i>CiniFlix</a>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CiniFlix</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movies.html">Movie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming.html">Coming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\my list.html">My List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#newsletter">Newsletter</a>
+            </li>
+
+          </ul>
+          
+
+        </div>
+      </div>
+
+      <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\login.html" class="button" > Login</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    </div>
+    
+  </nav>
+</header>
+    
+
+ <section class="hero-section">
+
+  </section>
+  
+   <!--  Home  -->
+    
+<section class="home swiper" id="home">
+
+
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide container">
+
+        <img src="C:\OneDrive\Pictures\photos\Venom-and-Spider-Man-Movie-Comic-Versions.avif" alt="">
+        <div class="home-text">
+          <span>Marvel Universe</span>
+          <h1>Venom: Let There <br> Be Carnage</h1>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\book.html" class="button">Book Now</a>
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\login 2.html\home 1.html" class="button"> watch Trailer <i class="fa-solid fa-play" id="bx"></i></a>
+        </div>
+
+      </div>
+
+      <!-- box 2-->
+
+      <div class="swiper-slide container">
+
+        <img src="home2.jpeg" alt="">
+        <div class="home-text">
+          <span>Marvel Universe</span>
+          <h1>Avengers: <br> Infinity War</h1>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\book.html" class="button">Book Now</a>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\login 2.html\home 2.html" class="button" id="button1"> watch Trailer <i class="fa-solid fa-play" id="bx"></i></a>
+        </div>
+
+      </div>
+
+      <!-- box 3-->
+
+      <div class="swiper-slide container">
+
+        <img src="home 3.jpeg" alt="">
+        <div class="home-text">
+          <span>Marvel Universe</span>
+          <h1>Spider-Man: <br> Far from Home</h1>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\book.html" class="button">Book Now</a>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\home 3.html" class="button"> watch Trailer <i class="fa-solid fa-play" id="bx"></i></a>
+        </div>
+
+      </div>
+
+      
+  </div>
+
+    <div class="swiper-pagination"></div>
+
+  </section>
+  
+
+
+  <!--card-->
+
+  <section class="card" id="card">
+    <h2 class="heading">KIDS SERIES</h2>
+
+    <!--card container-->
+    <div class="card-container"> 
+
+      <div class="card1" id="card1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqK_qCDOJUQeJyQm0r31X8B2m8gVdjFld1g&s" alt="" >
+        <div class="card-content">
+          <h2>Avengers Assembly</h2>
+          <p>The Marvel Avengers Assemble series tells stories of the superhero team, The Avengers, as they face various threats and villains.</p>
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\kids 1.html" class="button"> watch <i class="fa-solid fa-play" id="bx1"></i></a>
+            
+            </div>
+      </div>
+
+      <div class="card1" id="card2">
+        <img src="https://preview.redd.it/a-few-times-marvel-really-said-f-them-kids-v0-lzv1bhalyefe1.jpg?width=600&format=pjpg&auto=webp&s=1bcf79900adfef7d44e4f9e2ca13f18452c88ed4" alt="" >
+        <div class="card-content">
+          <h2>Power Pack</h2>
+          <p>Power Pack is a superhero team consisting of four young siblings appearing in American comic books published by Marvel Comics.</p>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\kids 2.html"  class="button" >watch <i class="fa-solid fa-play" id="bx1"></i></a>
+        </div>
+      </div>
+
+      <div class="card1" id="card3">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Super_Hero_Squad_Show.jpg/250px-Super_Hero_Squad_Show.jpg" alt="">
+        <div class="card-content">
+          <h2>Hero Up!</h2>
+          <p>Many Marvel fans believe that Thor Odinson is the most powerful character in the Marvel universe. After all, he is the God of Thunder! </p>
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\kids 3.html"  class="button" >watch <i class="fa-solid fa-play" id="bx1"></i></a>
+        </div>
+      </div>
+
+        </div>
+
+     </section>
+
+
+     <!--movies-->
+
+     <section class="movies" id="movies">
+    <h2 class="heading">Opening This Week</h2>
+
+    <!--movies container-->
+    <div class="movies-container" id="span">
+      
+      <!--box 1-->
+      <div class="box">
+        <div class="box-img">
+          
+          <img src="m1.jpeg" alt="">
+          
+           <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 1.html" class="playmovie">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtnmovie" ></div>
+            
+          </a>
+        
+          
+
+
+          </div>
+
+          <h3>Venom</h3>
+        <span>120 min | Action</span>
+
+      </div>
+
+      <!--box 2-->
+      <div class="box">
+        <div class="box-img">
+          
+       <img src="m2.jpeg" alt=""> 
+       
+        <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 2.html" class="playmovie2">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Dunkirt</h3>
+        <span>120 min | Adventure</span>
+            
+       </div>
+
+       <!--box 3-->
+      <div class="box">
+
+        <div class="box-img">
+
+          <img src="m3.jpeg" alt="">
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 3.html" class="playmovie3">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+
+        <h3>Batman&Superman</h3>
+
+        <span>120 min | Thriller</span>
+       </div>
+
+      <!--box 4-->
+      <div class="box">
+        <div class="box-img">
+
+          <img src="m4.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 4.html" class="playmovie4">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Jhon Wick</h3>
+        <span>120 min | Adventure</span>
+      </div>
+
+      <!--box 5-->
+      <div class="box">
+        <div class="box-img">
+
+      
+          <img src="m5.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 5.html" class="playmovie5">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Aquaman</h3>
+        <span>120 min | Action</span>
+      </div>
+
+      <!--box 6-->
+      <div class="box">
+        <div class="box-img">
+
+          <img src="m6.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 6.html" class="playmovie6">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Black Panther</h3>
+        <span>120 min | Action</span>
+      </div>
+
+      <!--box 7-->
+      <div class="box">
+        <div class="box-img">
+
+          <img src="m7.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 7.html" class="playmovie7">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Thor</h3>
+        <span>120 min | Adventure</span>
+      </div>
+
+      <!--box 8-->
+      <div class="box">
+        <div class="box-img">
+
+
+          <img src="m8.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 8.html" class="playmovie8">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Bumbleebee</h3>
+        <span>120 min | Thriller</span>
+
+      </div>
+
+      <!--box 9-->
+      <div class="box">
+        <div class="box-img">
+
+          <img src="m9.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 9.html" class="playmovie9">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Mortal Engines</h3>
+        <span>120 min | Action</span>
+      </div>
+
+      <!--box 10-->
+      <div class="box">
+        <div class="box-img">
+
+          <img src="m10.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\movie 10.html" class="playmovie10">
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            <div class="playbtnmovie"></div>
+          </a>
+
+        </div>
+        <h3>Underworld</h3>
+        <span>120 min | Action</span>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!--coming-->
+
+    <section class="coming" id="coming">
+    <h2 class="heading">Coming Soon</h2>
+    <!--coming container-->
+    <div class="coming-container" id="span">
+      <!--box 1-->
+      <div class="box1">
+        <div class="box1-img">
+            
+          <img src="coming 1.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming1.html" class="playcoming">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+
+          
+        </div>
+        <h3>Johnny English </h3>
+        <span>Comedy/Action</span>
+      </div>
+
+      <!--box 2-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 2.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming2.html" class="playcoming2">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Warcraft</h3>
+        <span>Fantacy/Action</span>
+      </div>
+
+      <!--box 3-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 3.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming3.html" class="playcoming3">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Rampage</h3>
+        <span>Action</span>
+      </div>
+
+      <!--box 4-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 4.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming4.html" class="playcoming4">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>The Iron Lady</h3>
+        <span>Drama/Romance</span>
+      </div>
+
+      <!--box 5-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 5.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming5.html" class="playcoming5">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Justice League</h3>
+        <span>Action/Adventure</span>
+      </div>
+
+      <!--box 6-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming6.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming6.html" class="playcoming6">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Doctor Strange</h3>
+        <span>Action/Fantacy</span>
+      </div>
+
+      <!--box 7-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 7.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming7.html" class="playcoming7">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Captain Marvel</h3>
+        <span>Action</span>
+      </div>
+
+      <!--box 8-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 8.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming8.html" class="playcoming8">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Black Widow</h3>
+        <span>Civil War</span>
+
+      </div>
+
+      <!--box 9-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 9.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming9.html" class="playcoming9">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Ant-Man</h3>
+        <span>Action/Comedy</span>
+      </div>
+      <!--box 10-->
+      <div class="box1">
+        <div class="box1-img">
+
+          <img src="coming 10.jpeg" alt="">
+
+          <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\coming10.html" class="playcoming10">
+      
+
+            <i class="fa-solid fa-play" id="bx-1"></i>
+            
+
+            <div class="playbtncoming" ></div>
+            
+          </a>
+
+        </div>
+        <h3>Guardians-Galaxy</h3>
+        <span>Action/Adventure</span>
+      </div>
+    </div>
+
+  </section>
+
+
+
+     <!--CARUSAL-->
+    
+     <section class="slider" id="slider">
+      
+    <h2 class="heading">MARVEL CINEMATIC</h2>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slide 1.webp" class="d-block w-100" alt="..."  id="carousel-img"  height="600">
+      <div class="carousel-caption" >
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slide 2.webp" class="d-block w-100" alt="..."  height="600">
+      <div class="carousel-caption">
+        <h5>Spider-Man & Super-man</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slide 3.jpg" class="d-block w-100" alt="..."  height="600">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slide 4.webp" class="d-block w-100" alt="..."  height="600">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+     </section>
+     
+     
+
+     
+  
+
+ 
+
+  <!--News letter-->
+  <section class="newsletter" id="newsletter">
+    <h2>Subscribe To Get <br> Newsletter</h2>
+    <form action="">
+      <input type="email" class="email" placeholder="Enter Email..." required>
+      <input type="submit" value="Subscribe" class="button">
+
+    </form>
+  </section>
+  <!--footer-->
+  <section class="footer">
+    <a href="#" class="logo">
+      <i class="fa-solid fa-film">CiniFlix</i> 
+
+    </a>
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+    </div>
+  </section>
+
+  <!--copy right-->
+  <div class="copyright">
+    <p>&#169; CineFlix All Right Reserverd.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--coming Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+
+  <!--boot-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+
+
+    
+
+</body>
+
+</html>

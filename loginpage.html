@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--box icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="log style.css" />
+</head>
+<body>
+    <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-5622,resizemode-75,msid-101288749/news/international/us/marvel-cinematic-universe-titles-see-the-right-order-to-watch-these-movies-series.jpg" width="100%"  height="100%">
+
+  <div class="container">
+    
+    <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\index.html" class="close">
+      
+
+            <i class="fa-solid fa-xmark" id="closebtn"></i>
+            
+
+            <div class="closebtn" ></div>
+            
+          </a>
+    
+    <div class="form-container" id="form-container">
+
+      
+        
+      <!-- Login Form -->
+      <form id="loginForm" class="form">
+        <h2>Login</h2>
+        
+       <input  type="email" id="loginEmail" placeholder="Email"  required />
+       <span class="error" id="emailError"></span>
+        <input type="password" id="loginPassword" placeholder="Password"  required />
+        <span class="error" id="passwordError"></span>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remenber me</label>
+          <a href="#">Forgot password</a>
+        </div>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="form hidden">
+        <h2>Register</h2>
+        <input type="text" id="registerUsername" placeholder="Username"  required />
+        <span class="error" id="nameError"></span>
+        <input type="email" id="registerEmail" placeholder="Email" required />
+        <span class="error" id="emailError"></span>
+        <input type="password" id="registerPassword" placeholder="Password" required />
+        <span class="error" id="passwordError"></span>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & condition</label>
+
+          
+        </div>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+      </form>
+
+      
+    </div>
+  </div>
+
+  
+
+  <script src="log script.js"></script>
+</body>
+</html>

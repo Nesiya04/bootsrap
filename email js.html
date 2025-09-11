@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Ticket Booking</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #2c2c3e;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+input, select {
+  background: #fff;
+  color: #000;
+}
+
+button {
+  background: #ff4757;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e84118;
+}
+
+#statusMsg {
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Movie Ticket</h1>
+    <form id="bookingForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      
+      <select name="movie" required>
+        <option value="">Select a Movie</option>
+        <option value="Avengers">Avengers</option>
+        <option value="Inception">Inception</option>
+        <option value="Interstellar">Interstellar</option>
+      </select>
+      
+      <input type="date" name="date" required />
+      <input type="time" name="time" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+
+  <script>  
+// Initialize EmailJS
+(function() {
+  emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+})();
+
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    .then(function () {
+      document.getElementById("statusMsg").innerHTML = "Booking confirmed! Check your email.";
+      document.getElementById("bookingForm").reset();
+    }, function (error) {
+      document.getElementById("statusMsg").innerHTML = "Failed to send confirmation. Try again.";
+      console.error("FAILED...", error);
+    });
+});
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  background-color: oldlace;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  position: absolute;
+ 
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+ font-weight: 900;
+ font-size: 33px;
+
+}
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: orangered;
+  font-family: cursive;
+ font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: red;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: navy;
+  font-family: cursive;
+}
+.container .close{
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 38px;
+      height: 37px;
+      background-color: orangered;
+      font-size: 2rem;
+      color: white;
+      justify-content: center;
+      padding-left:5px ;
+      border-radius: 7px;
+      border: 2px solid red;
+      }
+.container .close:hover{
+
+background-color: red;
+color: white;
+}

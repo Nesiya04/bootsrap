@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="book  style.css">
+
+   <!--box icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/wm/2024/08/mcu-original-6-avengers.jpg" height="100%" width="200%">
+
+  
+
+  <div class="container">
+    <a href="C:\OneDrive\Desktop\JAVA SCRIPT\project.html\index.html" class="close">
+      
+
+            <i class="fa-solid fa-xmark" id="closebtn"></i>
+            
+
+           <div class="closebtn" ></div>
+            
+           </a>
+    
+    <h1>Marvel Universe</h1>
+    <h2>
+      Ticket Booking
+    </h2>
+    <form id="bookingForm" onsubmit="onsubmit">
+      <label for="movie">Select Movie:</label>
+      <select id="movie" required>
+        <option value="" disabled selected>Select a movie</option>
+        <option value="10">Venom - $10</option>
+        <option value="12">Avengers: The Infinity war - $12</option>
+        <option value="8">Spider-Man- $8</option>
+        <option value="20">X-man - $20</option>
+        <option value="10">Wolverine - $10</option>
+        <option value="22">Fantastic Four - $22</option>
+        <option value="30">Iron:Men - $30</option>
+
+      </select>
+
+      <label for="tickets">Number of Tickets:</label>
+      <input type="number" id="tickets" min="1" required placeholder="Enter number of tickets">
+
+      <label for="email">Email Address</label>
+      <input type="text" id="tickets" required placeholder="Enter your email" name="email">
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  
+
+  <script src="book script.js"></script>
+</body>
+</html>
